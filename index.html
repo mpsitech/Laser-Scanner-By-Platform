@@ -95,15 +95,19 @@
 </section>
 <section id="purpose">
 <h1>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading"></a></h1>
-<p>This documentation covers the platform-specific aspects of the Whiznium StarterKit, which is a tabletop 3D laser scanner.</p>
-<p>While it is closely related to the corresponding (Linux) host code, to be found here:</p>
+<p>This documentation covers the platform-specific aspects of the Whiznium StarterKit.
+The Whiznium StarterKit is a tabletop 3D laser scanner which in turn serves as a comprehensive example for the power of model-based source code generation by means of the Open Source Whiznium developer tools.</p>
+<p>While this documentation is closely related to the corresponding (Linux) host code, to be found here:</p>
 <p><a class="reference external" href="https://github.com/mpsitech/wzsk-Whiznium-StarterKit">Whiznium StarterKit on GitHub</a></p>
 <p>… and to the VHDL/C device code, to be found here:</p>
 <p><a class="reference external" href="https://github.com/mpsitech/wskd-Whiznium-StarterKit-Device">Whiznium StarterKit Device on GitHub</a></p>
-<p>Here you will find everything from adapter PCB schematics and board files, to vendor IDE bring-up instructions, to referred vendor IP documentation (such as application notes and datasheets).</p>
+<p>… here you will find everything from adapter PCB schematics and board files, to vendor IDE bring-up instructions, to referred vendor IP documentation (such as application notes and datasheets).</p>
 </section>
-<section id="completion-matrix">
-<h1>Completion Matrix<a class="headerlink" href="#completion-matrix" title="Permalink to this heading"></a></h1>
+<section id="completion-matrices">
+<h1>Completion Matrices<a class="headerlink" href="#completion-matrices" title="Permalink to this heading"></a></h1>
+<section id="platforms">
+<h2>Platforms<a class="headerlink" href="#platforms" title="Permalink to this heading"></a></h2>
+<p>Status for each hardware platform.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 46%" />
@@ -226,8 +230,68 @@
 <p>more suitable platform to be found where clock and signals are routed differentially to a connector</p>
 </aside>
 </aside>
-<p>Last update: July 4, 2023.</p>
+</section>
+<section id="fpga-interfaces">
+<h2>FPGA Interfaces<a class="headerlink" href="#fpga-interfaces" title="Permalink to this heading"></a></h2>
+<p>Status of the wrappers, aiming to make standard FPGA interfaces as platform-independent as possible. Results are made available in the respective current WhizniumDBE release.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Platform</p></th>
+<th class="head"><p>DDR memory</p></th>
+<th class="head"><p>HDMI (out)</p></th>
+<th class="head"><p>MIPI CSI-2</p></th>
+<th class="head"><p>PCI Express</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AMD Gen1 (arty, nxsv)</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+</tr>
+<tr class="row-odd"><td><p>AMD Gen2 (zudk)</p></td>
+<td><p>in progress</p></td>
+<td><p>not planned</p></td>
+<td><p>in progress</p></td>
+<td><p>not planned</p></td>
+</tr>
+<tr class="row-even"><td><p>Efinix (tidk)</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+<td><p>not planned</p></td>
+</tr>
+<tr class="row-odd"><td><p>intelPSG Gen1 (cgsk, mcep)</p></td>
+<td><p>not started</p></td>
+<td><p>not started</p></td>
+<td><p>not started</p></td>
+<td><p>not started</p></td>
+</tr>
+<tr class="row-even"><td><p>Lattice (cleb)</p></td>
+<td><p>not planned</p></td>
+<td><p>not planned</p></td>
+<td><p>in progress</p></td>
+<td><p>in progress</p></td>
+</tr>
+<tr class="row-odd"><td><p>Microchip (iccl)</p></td>
+<td><p>not started</p></td>
+<td><p>not planned</p></td>
+<td><p>not started</p></td>
+<td><p>not planned</p></td>
+</tr>
+</tbody>
+</table>
+<p>Last update: July 5, 2023.</p>
 <p>In case of problems, please do not hesitate to contact MPSI Technologies at <a class="reference external" href="mailto:support&#37;&#52;&#48;mpsitech&#46;com">support<span>&#64;</span>mpsitech<span>&#46;</span>com</a>.</p>
+</section>
 </section>
 
 

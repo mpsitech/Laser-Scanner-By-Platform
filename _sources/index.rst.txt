@@ -35,9 +35,10 @@ Welcome to the Laser Scanner by Platform docs
 Purpose
 =======
 
-This documentation covers the platform-specific aspects of the Whiznium StarterKit, which is a tabletop 3D laser scanner.
+This documentation covers the platform-specific aspects of the Whiznium StarterKit.
+The Whiznium StarterKit is a tabletop 3D laser scanner which in turn serves as a comprehensive example for the power of model-based source code generation by means of the Open Source Whiznium developer tools.
 
-While it is closely related to the corresponding (Linux) host code, to be found here:
+While this documentation is closely related to the corresponding (Linux) host code, to be found here:
 
 `Whiznium StarterKit on GitHub <https://github.com/mpsitech/wzsk-Whiznium-StarterKit>`_
 
@@ -45,10 +46,15 @@ While it is closely related to the corresponding (Linux) host code, to be found 
 
 `Whiznium StarterKit Device on GitHub <https://github.com/mpsitech/wskd-Whiznium-StarterKit-Device>`_
 
-Here you will find everything from adapter PCB schematics and board files, to vendor IDE bring-up instructions, to referred vendor IP documentation (such as application notes and datasheets).
+... here you will find everything from adapter PCB schematics and board files, to vendor IDE bring-up instructions, to referred vendor IP documentation (such as application notes and datasheets).
 
-Completion Matrix
-=================
+Completion Matrices
+===================
+
+Platforms
+---------
+
+Status for each hardware platform.
 
 .. list-table::
    :widths: 30 5 5 5 5 5 5 5
@@ -157,6 +163,57 @@ Completion Matrix
 
 .. [#] more suitable platform to be found where clock and signals are routed differentially to a connector
 
+FPGA Interfaces
+---------------
+
+Status of the wrappers, aiming to make standard FPGA interfaces as platform-independent as possible. Results are made available in the respective current WhizniumDBE release.
+
+.. list-table::
+   :widths: 30 5 5 5 5
+   :header-rows: 1
+
+   * - Platform
+     - DDR memory
+     - HDMI (out)
+     - MIPI CSI-2
+     - PCI Express
+
+   * - AMD Gen1 (arty, nxsv)
+     - in progress
+     - in progress
+     - in progress
+     - in progress
+
+   * - AMD Gen2 (zudk)
+     - in progress
+     - not planned
+     - in progress
+     - not planned
+
+   * - Efinix (tidk)
+     - in progress
+     - in progress
+     - in progress
+     - not planned
+
+   * - intelPSG Gen1 (cgsk, mcep)
+     - not started
+     - not started
+     - not started
+     - not started
+
+   * - Lattice (cleb)
+     - not planned
+     - not planned
+     - in progress
+     - in progress
+
+   * - Microchip (iccl)
+     - not started
+     - not planned
+     - not started
+     - not planned
+
 ..
    * - Toradex Apalis
      - published
@@ -167,6 +224,6 @@ Completion Matrix
      - not planned
      - not applicable
 
-Last update: July 4, 2023.
+Last update: July 5, 2023.
 
 In case of problems, please do not hesitate to contact MPSI Technologies at `support@mpsitech.com <mailto:support@mpsitech.com>`_.
