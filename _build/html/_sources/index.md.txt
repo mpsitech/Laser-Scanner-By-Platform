@@ -1,0 +1,29 @@
+.. Laser Scanner Platforms documentation master file, created by
+   sphinx-quickstart on Tue Jul  4 21:15:03 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to the Laser Scanners by Platform docs
+==============================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Platforms
+   :hidden:
+
+   Toradex Apalis (apalis) <./apalis.md>
+   Digilent Arty Z7-20 (arty) <./arty.md>
+   terasIC Cyclone V GX starter kit (cgsk) <./cgsk.md>
+   Lattice CrossLink-NX eval board (cleb) <./cleb.md>
+   Microchip PolarFire SoC Icicle kit (iccl) <./iccl.md>
+   Aries Cyclone V SE SoM (mcep) <./mcep.md>
+   Digilent Nexys Video (nxsv) <./nxsv.md>
+   Efinix Titanium Ti180 dev kit (tidk) <./tidk.md>
+   SiLabs UniversalBee dev kit (ubdk) <./ubdk.md>
+   Avnet ZUBoard 1CG (zudk) <./zudk.md>
+
+Purpose
+=======
+
+Completion Matrix
+=================
